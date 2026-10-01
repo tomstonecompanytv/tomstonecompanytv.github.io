@@ -98,6 +98,13 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;justify-content:space-bet
 footer nav{display:flex;gap:20px}
 footer nav a:hover{color:var(--ice2)}
 :focus-visible{outline:2px solid var(--ice);outline-offset:3px}
+
+.legal{border-top:1px solid var(--line);padding-block:clamp(48px,7vw,80px)}
+.legal-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:40px}
+.legal p{margin:12px 0 0;color:var(--ink2);font-size:15px;line-height:1.6}
+.legal p strong{color:var(--ink)}
+.legal .small{font-size:13px;color:var(--mute)}
+@media(max-width:720px){.legal-grid{grid-template-columns:1fr}}
 </style>
 
 <header class="nav">
@@ -201,10 +208,29 @@ footer nav a:hover{color:var(--ice2)}
   </div>
 </section>
 
+
+<section class="block legal" id="legal">
+  <div class="wrap">
+    <div class="legal-grid">
+      <div>
+        <div class="eyebrow">Imprint · Impressum</div>
+        <p><strong>Tomstone Company TV</strong><br>Thomas Steiner<br>Forchstrasse 191<br>8704 Herrliberg, Switzerland</p>
+        <p>E-Mail: ts@tomstonecompany.com</p>
+        <p class="small">Responsible for the content of this website: Thomas Steiner. All texts, visuals and the DRAGON RIDERS universe are protected by copyright. © 2026 Tomstone Company TV.</p>
+      </div>
+      <div>
+        <div class="eyebrow">Privacy · Datenschutz</div>
+        <p class="small">This website does not use cookies, tracking or analytics and does not collect personal data. It is hosted on GitHub Pages (GitHub Inc., USA); the hosting provider may record technical access data such as IP address, browser type and time of access in server logs for security purposes. If you contact us by e-mail, your data is used solely to answer your request. Governing law: Swiss law.</p>
+        <p class="small">Diese Website verwendet keine Cookies, kein Tracking und sammelt keine personenbezogenen Daten. Hosting: GitHub Pages (GitHub Inc., USA); der Hoster kann technische Zugriffsdaten in Server-Logs speichern. Bei Kontakt per E-Mail werden Ihre Angaben nur zur Beantwortung Ihrer Anfrage verwendet. Es gilt Schweizer Recht.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="wrap">
     <div>© 2026 Tomstone Company TV · Tom Stone Production · Zürich</div>
-    <nav><a href="#top">Imprint</a><a href="#top">Privacy</a><a href="#contact">Contact</a></nav>
+    <nav><a href="#legal">Imprint</a><a href="#legal">Privacy</a><a href="#contact">Contact</a></nav>
   </div>
 </footer>
 
